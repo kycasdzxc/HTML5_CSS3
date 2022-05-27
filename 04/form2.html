@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>color : <input type="color" name="color" value="#ff0000"></p>
+        <p>date : <input type="date" name="date" min="2022-02-02" max="2022-02-15"></p>
+        <p>month : <input type="month" name="month"></p>
+        <p>week : <input type="week" name="week"></p>
+        <hr>
+        <p>time : <input type="time" name="time" Id="time"></p>
+        <p>datetime : <input type="datetime" name="datetime"></p>
+        <p>datetime-local : <input type="datetime-local" name="datetimeLocal"></p>
+        <a href="http://www.naver.com" id="btn1">네이버 이동</a>
+        <input type="button" value="click me" id="btn2">
+        <input type="file" name="file" accept="image/*">
+        <button>전송</button>
+    </form>
+    <script>
+        // var date = new Date();
+        // document.getElementById("time").value = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds()
+        document.getElementById("btn1").onclick = function() {
+            return confirm("네이버로 이동합니다.");
+        }
+        document.getElementById("btn2").onclick = function() {
+            alert("you click me!");
+        }
+    </script>
+</body>
+</html>

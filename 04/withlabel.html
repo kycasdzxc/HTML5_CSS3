@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:8080/web_test/multi.jsp">
+        <fieldset>
+            <legend><h3>수강분야(다수 선택 가능)</h3></legend>
+            <ul>
+                <li><label><input type="checkbox" name="course" value="grm">문법</label></li>
+                <li><label><input type="checkbox" name="course" value="wr">작문</label></li>
+                <li><label><input type="checkbox" name="course" value="rd">독해</label></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend><h3>수강과목(1과목만 선택 가능)</h3></legend>
+            <ul>
+                <li><label><input type="radio" name="subject" value="ch">중국어회화</label></li>
+                <li><label><input type="radio" name="subject" value="jp">일어회화</label></li>
+                <li><label><input type="radio" name="subject" value="eng"?>영어회화</label></li>
+            </ul>
+        </fieldset>
+        <button>전송</button>
+    </form>
+</body>
+</html>

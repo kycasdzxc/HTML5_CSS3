@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 공백 >> 조상 */
+        div span {color: blue !important;}
+
+        /* > : 부모 */
+        div > span {font-weight: bold;}
+    </style>
+</head>
+<body>
+    <div>
+        <p>div p <span>span</span></p>
+    </div>
+    <p>p <span>span</span></p>
+    <div>
+        <span>span</span>
+    </div>
+</body>
+</html>

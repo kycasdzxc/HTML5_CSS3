@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* h1, h2 {color : blue;} */
+        .text-blue {color: blue;}
+        .text-underline {text-decoration: underline;}
+
+        /* 적용 범위 제한 */
+        h1.text-blue {font-style: italic;}
+        #id1 {color: red;}
+    </style>
+</head>
+<body>
+    <h1 class="text-blue">h1</h1>
+    <h2 class="text-blue text-underline">h2</h2>
+    <p class="text-underline">p</p>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <p class="text-blue" id="id1">p</p>
+</body>
+</html>
