@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container ul {border: 1px dotted blue;} /* 자손 선택자 */
+        #container > ul {border-radius: 10px;} /* 자식 선택자 */
+        li + li {color: red;}
+        div h3 ~ h3 ~ p {color: blue;}
+        p + h3 ~ p {color: blue;}
+    </style>
+</head>
+<body>
+    <section id="container">
+        <header><h1>예약 방법 및 요금</h1></header>
+        <p>요안도라에 예약하려면?</p>
+        <ul>
+            <li>예약방법
+                <ul>
+                    <li>직접 통화</li>
+                    <li>문자 남기기</li>
+                </ul>>
+            </li>
+            <li>dyrma
+                <ul>
+                    <li>1인 : 40,000원</li>
+                    <li>2인 : 60,000원</li>
+                    <li>3인 : 480,000원</li>
+                    <li>4인 : 100,000원</li>
+                </ul>>
+            </li>
+        </ul>
+    </section>
+    <ul>
+        <li>추가 목록1</li>
+        <li>추가 목록2</li>
+        <li>추가 목록3</li>
+        <li>추가 목록4</li>
+    </ul>
+
+    <div>
+        <h3>아아아아</h3>
+        <p>가가가가</p>
+        <p>가가가가</p>
+        <p>가가가가</p>
+        <p>가가가가</p>
+        <h3>아아아아</h3>
+        <p>가가가가</p>
+        <p>가가가가</p>
+        <p>가가가가</p>
+        <p>가가가가</p>
+    </div>
+</body>
+</html>

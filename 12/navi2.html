@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {padding: 0; list-style: none; background: #bbb;}
+        ul::after {content: ''; display: block; clear: both;}
+        nav > ul > li {float: left; position: relative; margin: 0 30px;}
+        /* nav > ul > li:hover ul {display: block;} */
+        a {display: block; padding: 10px 30px; text-decoration: none;}
+        li ul {position: absolute; display: none;}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function() {
+            // $("nav > ul > li").hover(function() {
+            //     $(this).find("ul").stop().slideDown(200);        
+            // }, function() {
+            //     $(this).find("ul").stop().slideUp(200);        
+            // });
+            $("nav > ul > li").on("mouseenter focusin", function() {
+                $(this).find("ul").stop().slideDown(200);        
+            }).on("mouseleave focusout", function() {
+                $(this).find("ul").stop().slideUp(200);        
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">이용 안내</a>
+            <ul>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴2</a></li>
+                <li><a href="">메뉴3</a></li>
+                <li><a href="">메뉴4</a></li>
+            </ul>
+            </li>
+            <li><a href="">객실 소개</a>
+                <ul>
+                    <li><a href="">메뉴1</a></li>
+                    <li><a href="">메뉴2</a></li>
+                    <li><a href="">메뉴3</a></li>
+                    <li><a href="">메뉴4</a></li>
+                </ul>
+            </li>
+            <li><a href="">예약 방법 및 요금</a></li>
+            <li><a href="">예약하기</a></li>
+        </ul>
+    </nav>
+
+    <form>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div h3:nth-child(3) {color: red;} */
+        div h3:nth-child(3n) {color: blue;}
+        /* div h3:nth-last-child(4n) {border: 1px solid;} */
+        div h3:nth-of-type(3n) {text-decoration: underline;}
+
+        div h2:first-of-type {font-size: 3em;}
+        div h2:last-of-type {border: 1px solid;}
+        div *:only-of-type {color: green;}
+
+        div *:last-of-type {border: 1px solid;}
+        div > *:not(h1 + h3) {text-decoration: line-through;}
+    </style>
+</head>
+<body>
+    <div>
+        <h3>1</h3>
+        <h3>2</h3>
+        <h3>3</h3>
+        <h3>4</h3>
+        <h3>5</h3>
+        <h2>a</h2>
+        <h3>6</h3>
+        <h3>7</h3>
+        <h3>8</h3>
+        <h3>9</h3>
+        <h1>가</h1>
+        <h3>10</h3>
+    </div>
+</body>
+</html>

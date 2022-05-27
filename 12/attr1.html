@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {list-style: none;}
+        ul li {margin: 15px 0;}
+        ul li a {text-decoration: none; color: #06f; padding: 10px 20px;}
+
+        /* 속성 이름으로 선택 */
+        /* .ul1 li ~ li a {background: yellow;} */
+        .ul1 li {display: inline-block; margin: 40px;}
+        .ul1 li a[href] {background: yellow;}
+        
+        /* 속성 이름, 값으로 선택 */
+        .ul2 a[target="_blank"] {
+            padding-right: 30px;
+            background: url(images/newwindow.png) no-repeat center right;
+    }
+
+    /* 여러값 중 특정 값이 포함된 속성에 스타일 적용하기 */
+    /* ~= : 공백으로 구분 */
+    .ul3 li {display: inline-block; margin: 40px;}
+    .ul3 .flat {background: blue; color: white;}
+    .ul3 [class ~= "button"] {
+        border: 2px solid black;
+        box-shadow: rgba(0, 0, 0, 0.4) 5px 5px;
+    }
+    .ul3 [title~='CSS'] {text-decoration: underline;}
+
+    /* 여러값 중 특정 값이 포함된 속성에 스타일 적용 */
+    /* |= : -으로 구분 */
+    .ul4 li {display: inline-block; margin: 40px;}
+    .ul4 a[title|="us"] {
+        background: url(images/us.png) no-repeat left center;
+        padding: 5px 25px;
+    }
+    .ul4 a[title|="jap"] {
+        background: url(images/jp.png) no-repeat left center;
+        padding: 5px 25px;
+    }
+
+    /* 특정 값이 포함된 속성에 스타일 적용 */
+    /* *= : 포함여부만 체크 */
+    .ul5 [href *= 'w3'] {
+        background: blue;
+        color: white;
+    }
+
+    .ul6 a[href$="hwp"] {
+        background: url(images/hwp_icon.gif) no-repeat right center;
+        padding: 25px;
+    }
+    .ul6 a[href$="xls"] {
+        background: url(images/excel_icon.gif) no-repeat right center;
+        padding: 25px;
+    }
+
+    /* startWith(), endWith() */
+    /* "abcd".startWith("a") >> true */
+    /* "abcd".startWith("b") >> false */
+    </style>
+</head>
+<body>
+    <ul class="ul1">
+        <li><a>메인 메뉴 : </a></li>
+        <li><a href="">메뉴 1</a></li>
+        <li><a href="">메뉴 2</a></li>
+        <li><a href="">메뉴 3</a></li>
+        <li><a href="">메뉴 4</a></li>
+    </ul>
+    
+    <h1>HTML5 표준안 사이트</h1>
+    <ul class="ul2">
+        <li><a href="#" target="_blank">HTML</a></li>
+        <li><a href="#">CSS Selector Level 3</a></li>
+        <li><a href="#">미디어 쿼리</a></li>
+    </ul>
+    <ul class="ul3"> <!-- ~= -->
+        <li><a href="" title="HTML CSS">메뉴 1</a></li>
+        <li><a href="" title="HTML">메뉴 2</a></li>
+        <li><a href="" class="button" title="HTML CSS JS">메뉴 3</a></li>
+        <li><a href="" class="flat button" title="CSS-JS">메뉴 4</a></li>
+    </ul>
+    <ul class="ul4"> <!-- |= -->
+        <li>외국어 서비스 : </li>
+        <li><a href="" title="us">영어</a></li>
+        <li><a href="" title="us-english">영어</a></li>
+        <li><a href="" title="us english">영어</a></li>
+        <li><a href="" title="english-us">영어</a></li>
+        <li><a href="" title="english-us-english">영어</a></li>
+        <li><a href="" title="jap-anese">일본어</a></li>
+    </ul>
+
+    <h1>HTML5 참고 사이트</h1>
+    <p>(아래 링크 중 파란색 배경의 링크는 W3C 사이트로 연결됩니다.)</p>
+    <ul class="ul5"> <!-- *= -->
+            <li><a href="http://www.w3c.org">HTML 표준안 사이트</a></li>
+            <li><a href="http://www.webflatform.org">튜토리얼과 아티클</a></li>
+            <li><a href="http://caniuse">HTML 지원 여부 체크</a></li>
+            <li><a href="http://www.w3c.org">미디어 쿼리</a></li>
+    </ul>
+    <hr>
+    <ul class="ul6"> 
+        <li><a href="intro.hwp">hwp 파일</a></li>
+        <li><a href="intro.xls">엑셀 파일</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bg {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: auto;
+            height: auto;
+            min-height: 100%;
+            min-width: 100%;
+            z-index: -100;
+            background: url(images/flame.jpg) left top no-repeat;
+            background-size: cover;
+        }
+        #container {
+            position: relative;
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 30%;
+        }
+         .myClass {
+
+            width: 10px;
+            height: 800px;
+            position: absolute;
+            top: 0;
+            left: 0;
+         }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="bg">
+        <source src="media/flame.mp4">
+    </video>
+    <div class="myClass">
+    </div>
+        <div id="container">
+            <h2>사람을 구체적으로 도와주는 책</h2>
+            <h1>이지스퍼블리싱</h3>
+    </div>
+</body>
+</html>

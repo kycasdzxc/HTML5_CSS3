@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > div::after {content: ' '; display: block; clear: both;}
+        .origin {border: 1px solid; float: left; margin: 20px;}
+
+        .movex:hover {transform: translateX(50px);}
+        .movey:hover {transform: translateY(20px);}
+        .move:hover {transform: translate(10px, 20px);}
+
+        .scalex:hover {transform: scaleX(1.2);}
+        .scaley:hover {transform: scaley(1.5);}
+        .scale:hover {transform: scaleX(.7);}
+        .wrap {overflow: hidden;}
+        .scale-naver img {transition: all .3s .2s;}
+        .scale-naver:hover img {transform: scaleX(1.05);}
+
+        .rotate-div {transition: all .3s;}
+        .rotate-div .origin {perspective: 100px;}
+        .rotate1:hover {transform: rotate(20deg);}
+        .rotate2:hover {transform: rotate(320deg);}
+        .rotate3:hover {transform: rotateX(45deg);}
+        .rotate4:hover {transform: rotateY(45deg);}
+        .rotate5:hover {transform: rotateZ(45deg);}
+        .rotate6:hover {transform: rotate3d(2.5, 1.2, -1.5, 45deg);}
+
+        .box1, .box2 {padding: 30px; background-color: #8cd;}
+        .box1, .box2 {transition: all .3s;}
+        .box1:hover,.box2:hover {transform: rotateY(135deg)}
+        .box1 {backface-visibility: hidden;}
+        .box2 {backface-visibility: visible;}
+    </style>
+</head>
+<body>
+    <h1>scale</h1>
+    <div class="translate">
+        <div class="origin">
+            <div class = "movex"><img src="images/bus.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class = "movey"><img src="images/bus.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class = "move"><img src="images/bus.jpg"></div>
+        </div>
+    </div>
+    <h1>scale</h1>
+    <div class="scale-div">
+        <div class="origin">
+            <div class = "scalex"><img src="images/fruit.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class = "scaley"><img src="images/fruit.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class = "scale"><img src="images/fruit.jpg"></div>
+        </div>
+        <div class="origin wrap">
+            <div class = "scale-naver"><img src="images/fruit.jpg"></div>
+        </div>
+    </div>
+    <h1>rotate</h1>
+    <div class="rotate-div">
+        <div class="origin">
+            <div class = "rotate1"><img src="images/fruit.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class = "rotate2"><img src="images/fruit.jpg"></div>
+        </div>
+    </div>
+    <h1>rotate 3D</h1>
+    <div class="rotate-div">
+        <div class="origin">
+            <div class = "rotate3"><img src="images/fruit.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class = "rotate4"><img src="images/fruit.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class = "rotate5"><img src="images/fruit.jpg"></div>
+        </div>
+        <div class="origin">
+            <div class = "rotate6"><img src="images/fruit.jpg"></div>
+        </div>
+    </div>
+    
+    <div class="origin">
+        <div class="box1"><h1>back</h1></div>
+    </div>
+    <div class="origin">
+        <div class="box2"><h1>back</h1></div>
+    </div>
+</body>
+</html>
