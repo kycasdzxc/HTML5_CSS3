@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* nav ul li {display: inline; border-top: 3px solid; padding: 8px; margin: 15px;}
+        a {text-decoration: none; color: black;} */
+        nav ul li a {text-decoration: none; color: white;}
+        nav ul li {display: inline-block; margin: 20px;}
+        nav {background-color: rgb(11, 75, 172);}
+
+        .box {width: 100px; height: 100px;}
+        .b1 {background-color: red;}
+        .b2 {background-color: green;}
+        .b3 {background-color: blue;}
+        
+        .cls1 .b2 {display: none;}
+        .cls2 .b2 {visibility: hidden;}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">애완견 종류</a></li>
+            <li><a href="#">입양하기</a></li>
+            <li><a href="#">건강돌보기</a></li>
+            <li><a href="#">더불어살기</a></li>
+        </ul>
+    </nav>
+    <h2>애완견 종류</h2>
+    <hr>
+    <div class="cls1">
+        <div class="box b1"></div>
+        <div class="box b2"></div>
+        <div class="box b3"></div>
+    </div>
+    <div class="cls2">
+        <div class="box b1"></div>
+        <div class="box b2"></div>
+        <div class="box b3"></div>
+    </div>
+</body>
+</html>

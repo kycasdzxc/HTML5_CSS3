@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* inline tag 너비 높이 지정불가 */
+        body {height: 5000px;
+            background: url(images/apple-bg.jpg) no-repeat right top fixed;
+            /* background-image: ;
+            background-repeat: ;
+            background-position: ;
+            background-attachment: ; */
+        }
+        a {
+            display: inline-block;
+            height: 44px;
+            width: 46px;
+            text-indent: -9999px;
+            background-image: url(https://www.w3schools.com/css/img_navsprites.gif);
+            background-repeat: no-repeat;
+        }
+        .prev {background-position-x: -47px; width: 43px;}
+        .next {background-position-x: -91px; width: 43px;}
+    </style>
+</head>
+<body>
+    <div>
+    <a href="#">Home</a>
+    <a href="#" class = "prev">Prev</a>
+    <a href="#" class = "next">Next</a>
+    </div>
+</body>
+</html>

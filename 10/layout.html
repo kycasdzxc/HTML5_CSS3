@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {margin: 0;}
+        header {
+            background: url(images/bg2.png) no-repeat;
+            background-size: cover;
+            padding: 80px 15px 40px;
+            text-align: right;
+        }
+        header:hover {
+            background-image: url(images/bg.png);
+        }
+        header > * {width: 978px; margin: 20px auto;}
+        header h1 {color: #ff8}
+        header h2 {color: #ff0;}
+        nav {background: black; padding: 20px;}
+        nav::after, main {content: ' '; display: block; clear: both;}
+        nav ul {margin: 0; padding: 0; list-style: none; width: 978px; margin: 0 auto;}
+        nav li {float: left; margin-right: 80px;}
+        nav li a {color: #eee; text-decoration: none;}
+        nav li a:hover {color: #ff0;}
+
+        main {width: 978px; padding: 20px; margin: 0 auto; min-height: 600px;}
+        article, aside {float: left; padding: 10px;}
+        aside {width: 220px;}
+
+        footer {text-align: center; color: #eee; background-color: #111; padding: 30px;}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Joandora</h1>
+        <h2>가장 제주다운 수산리집</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">이용 안내</a></li>
+            <li><a href="#">객실 소개</a></li>
+            <li><a href="#">예약 방법</a></li>
+            <li><a href="#">예약하기</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <section class="content">
+                <h2>요안도라 소개</h2>
+                <h3>요안도라는 게스트 하우스(Guest House) 형식의 농어촌 민박입니다.</h3>
+                <p>성산의 날씨는 다음주 내내 높은 구름에 ......</p>
+                <p>오늘은 사진에 보이는 긴 돌담을 따라 ......</p>
+                <p>내일은 두달 엳동안 밖거리에 만든 ......</p>
+                <div class="banner">
+                    <img src="images/banner2.png" alt="요안도라">
+                </div>
+            </section>
+        </article>
+        <aside>
+            <h3>알립니다</h3>
+            <p>게스트 하우스 예약은 전화 070-###-#### ......</p>
+            <img src="images/2.jpg" alt="">
+            <img src="images/1.jpg" alt="">
+            <img src="images/4.jpg" alt="">
+        </aside>
+    </main>
+    <footer>
+        <address>
+            <p>제주특별자치도 남제주군 성산읍 수산리 000번지 요안도라</p>
+            <p>yan##@naver.com</p>
+        </address>
+        <p>Copyright &copy; all rights reserved</p>
+    </footer>
+</body>
+</html>

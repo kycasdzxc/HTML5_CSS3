@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {height: 2000px;}
+        .box {width: 100px; height: 100px; float: left;}
+        .box1 {background: red;}
+        .box2 {background: green;}
+        .box3 {background: blue;}
+
+        hr {clear:both;}
+        .outer2 .box2 {position: relative; left: -50px; top: -50px;}
+        .outer3 {position: relative;}
+        .outer3 .box2 {position: absolute; right: 0; top: 0;}
+        .outer4 .box2 {position: fixed; right: 0; bottom: 0;}
+    </style>
+</head>
+<body>
+    <div class="outer1">
+        <div class="box box1">box1</div>
+        <div class="box box2">1.box2</div>
+        <div class="box box3">box3</div>
+    </div>
+    <hr>
+    <div class="outer2">
+        <div class="box box1">box1</div>
+        <div class="box box2">2.box2</div>
+        <div class="box box3">box3</div>
+    </div>
+    <hr>
+    <div class="outer3">
+        <div class="box box1">box1</div>
+        <div class="box box2">3.box2</div>
+        <div class="box box3">box3</div>
+    </div>
+    <hr>
+    <div class="outer4">
+        <div class="box box1">box1</div>
+        <div class="box box2">4.box2</div>
+        <div class="box box3">box3</div>
+    </div>
+</body>
+</html>

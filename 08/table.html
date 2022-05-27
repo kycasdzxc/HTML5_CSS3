@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* n번째 : 서수
+        first second third fourth fifth
+        1st 2nd 3rd 4th 5th 6th
+        11th 12th 13th
+        21st      23rd
+        */
+        table, td {border: 1px solid;}
+        /* tr:nth-of-type(2n) {background: #aaa;} */
+        tr:nth-child(odd) {background: #aaa;}
+        td {padding: 8px; border-style: dashed; border-color: red;}
+        .box {width: 200px; height: 150px; border: 50px red; margin: 5px;}
+        .cls1 {border-style: groove;}
+        .cls2 {border-style: inset; border-color: black blue;}
+        .cls3 {border-style: outset; border-color: red green orange; padding: 20px 30px 10px;}
+        .cls4 {border-style: ridge; border-color: pink purple steelblue chocolate;}
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+    </table>
+    <div class="box cls1"></div>
+    <div class="box cls2"></div>
+    <div class="box cls3"></div>
+    <div class="box cls4"></div>
+</body>
+</html>

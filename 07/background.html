@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .balloon {background: #222; color: #eee; padding: 15px; width: 300px;
+            border-radius: 10px; position: relative;
+        }
+        .balloon::after {
+            position: absolute;
+            content: ' ';
+            border-style: solid;
+            border-color: #222 transparent transparent transparent;
+            border-width: 15px 10px;
+
+            left: 70px; bottom: -30px;
+            width: 0;
+            height: 0;
+        }
+        .leaf {
+            width: 100px; height: 70px; border: 1px solid green;
+            border-radius: 20px 2px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="balloon">이건 앞으로 말풍선이 될겁니다</h1>
+    <div class="leaf"></div>
+
+    <p class="balloon">이것도 말풍선</p>
+</body>
+</html>
